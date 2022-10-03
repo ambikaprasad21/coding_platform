@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contests</title>
+    <link rel="stylesheet" href="contest.css">
+    <link rel="icon" href="favicon.ico?v=2">
+    <script src="contest.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body >
+    <div class="websiteLogo"> <a href="index.html"><img src="images/logo-modified.png"></a>
+        <div class="dropdown" style="float:right;">
+            <button class="dropbtn">User</button>
+            <div class="dropdown-content">
+              <a href="#">Profile</a>
+              <a href="#">Courses</a>
+              <a href="#">Contests</a>
+            </div>
+          </div>
+        
+          <div class="topnav">
+            <a class="active0" href="#contests">Contests</a>
+            <a href="#problems">Problems</a>
+          </div>
+    </div>
+    <div class="container">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="images/img1.jpg"></div>
+              <div class="swiper-slide"><img src="images/img2.jpg"></div>
+              <div class="swiper-slide"><img src="images/img3.jpg"></div>
+              <div class="swiper-slide"><img src="images/img4.jpg"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            
+          </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+      autoplay:{
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+        loop: true,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        
+      });
+      </script>
+    <div class="contestPrizes">
+        <img class="cp" src="images/cp.jpg">
+    </div>
+    <div class="fang">
+        <img class="fangbased" src="images/fang.png">
+    </div>
+    <div class="middlePage">
+        <!-- <h4 class="problemname">Problem name</h4>
+        <h4 class="submmision">Submmision</h4>
+        <h4 class="Level">Level</h4> -->
+        <div class="filters">
+            <h4>Filters</h4>
+            <p class="filterhead">Filters</p>
+            <p class="topics">Topics</p>
+            <ol class="topicnames" style="list-style-type: square;" line-height="100px">
+               
+                <li>Trees</li>
+                <li>Graphs</li>
+                <li>Hashmaps</li>
+                <li>Sorting</li>
+            </ol>
+            <p class="difficulty">Difficulty</p>
+            <ol class="typediff" style="list-style-type: square;" line-height="100px">
+                <li>Basic</li>
+                <li>Easy</li><li>Medium</li>
+                <li>Hard</li>
+            </ol>
+            <p class="company">Company</p>
+            <ol class="comp" style="list-style-type: square;" line-height="100px">
+                <li>Microsoft</li>
+                <li>Google</li>
+                <li>Adobe</li>
+                <li>Flipcart</li>
+            
+            </ol>
+            
+        </div>
+        
+        <!-- table of problems -->
+        <div >
+          <table id="customers">
+            <tr>
+              <th>Problem name</th>
+              <th>Submission</th>
+              <th>Level</th>
+            </tr>
+            <tr>
+              <td><a href="https://www.codechef.com/submit/PERMCREATE">Permutation Creation</a></td>
+              <td>9818</td>
+              <td>1323</td>
+            </tr>
+            <tr>
+             <td> <a href="https://www.codechef.com/submit/HOWMANYMAX">How many maximums</a></td>
+              <td>10507</td>
+              <td>1202</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.codechef.com/submit/SC31">Weapon values</a></td>
+              <td>14965</td>
+              <td>1204</td>
+            </tr>
+            <tr>
+             <td> <a href="https://www.codechef.com/submit/BROKPHON">Broken telephone</a></td>
+              <td>16952</td>
+              <td>1204</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.codechef.com/submit/BALLOON">ICPC balloons</a></td>
+              <td>21337</td>
+              <td>1205</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.codechef.com/submit/SUBTASK">A subtask problem</a></td>
+              <td>18211</td>
+              <td>1217</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.codechef.com/submit/BRACKETS">Brackets</a></td>
+              <td>8828</td>
+              <td>1207</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.codechef.com/submit/PERMEXIS">Watson ask does permutation exits</a></td>
+              <td>21337</td>
+              <td>1205</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.codechef.com/submit/CFMM">Making meal</a></td>
+              <td>9669</td>
+              <td>1214</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.codechef.com/submit/NEWPIECE">New peice</a></td>
+              <td>18950</td>
+              <td>1216</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.codechef.com/submit/TWODIFFPALIN">Two different palindromes</a></td>
+              <td>14992</td>
+              <td>1216</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.codechef.com/submit/HILLS">Jumping the hills</a></td>
+              <td>6974</td>
+              <td>1216</td>
+            </tr>
+           
+          </table>
+          
+        </div>
+    </div>
+    
+   
+   
+</body>
+</html>

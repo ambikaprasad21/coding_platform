@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+   <link rel="stylesheet" href="dashboard.css">
+   <link rel="icon" href="favicon.ico?v=2">
+</head>
+<body >
+  <div class="websiteLogo"><a href="index.html"><img src="images/logo-modified.png"></a>
+    <div class="dropdown" style="float:right;">
+        <button class="dropbtn">User</button>
+        <div class="dropdown-content">
+          <a href="#">Profile</a>
+          <a href="#">Courses</a>
+          <a href="contest.html">Contests</a>
+        </div>
+      </div>
+    
+      <div class="topnav">
+        <a class="active0" href="contest.html">Contests</a>
+        <a href="#problems">Problems</a>
+      </div>
+</div>
+    <div class="userData">
+        <img  class="userLogo" src="images/userLogo.png">
+        <div class="info">
+            <p id="name">Ambika Prasad</p>
+            <p id="rank">Rank: 172845</p>
+        </div>
+        <div class="editprofile">
+            <button class="button1">Edit profile</button>
+        </div>
+        <div class="social">
+          <img class="locationimage" src="images/location.png" style="vertical-align: middle;"><p id="location" >India</p>
+        </div>
+        <div class="linkdin"><a class="linkdinlink" href="https://www.linkedin.com/in/ambika-prasad-b790b0226">
+          <img cls="linkdinimage" src="images/linkdin.png" style="vertical-align: middle;"><p id="linkdinname">Linkdin</p>
+          </a>
+        </div>
+        <div class="skills"><p>Skills</p></div>
+        <hr >
+        <div class="basictopics"><p>Basic topics</p></div>
+      <hr>
+      <div class="showmore"><p>Show more</p></div>
+      </div>
+      
+        
+    </div>
+    <div class="problemSolved">
+        <p id="problemsolved"><b>Problem solved</b></p>
+        <p>Easy</p>
+            <div id="myProgress">
+            <div id="myBar1">55%</div>
+             </div>
+          <script>
+            var i = 0;
+            function move() {
+              if (i == 0) {
+                i = 1;
+                var elem = document.getElementById("myBar1");
+                var width = 10;
+                var id = setInterval(frame, 10);
+                function frame() {
+                  if (width >= 100) {
+                    clearInterval(id);
+                    i = 0;
+                  } else {
+                    width++;
+                    elem.style.width = width + "%";
+                    elem.innerHTML = width  + "%";
+                  }
+                }
+              }
+            }
+            </script>
+
+<p>Medium</p>
+<div id="myProgress">
+<div id="myBar2">30%</div>
+ </div>
+<script>
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar2");
+    var width = 10;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+        elem.innerHTML = width  + "%";
+      }
+    }
+  }
+}
+</script>
+
+<p>Medium</p>
+<div id="myProgress">
+<div id="myBar3">10%</div>
+ </div>
+<script>
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar3");
+    var width = 10;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+        elem.innerHTML = width  + "%";
+      }
+    }
+  }
+}
+</script>
+
+    </div>
+    <div class="contestgoingtohappen">
+        <p id="contestupdate">Coding round for october month</p>
+        <p id="demo"></p>
+        <script>
+            var countDownDate = new Date("oct 8, 2022 8:00:00").getTime();
+            var x = setInterval(function() {
+              var now = new Date().getTime();
+              var distance = countDownDate - now;
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+              document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+            </script>
+            <p id="register">Register>></p>
+    </div>
+
+</body>
+</html>
